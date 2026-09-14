@@ -1,0 +1,27 @@
+{
+  "api_key": {
+    "gemini": "YOUR_GEMINI_API_KEY_HERE",
+    "openai": ""
+  },
+  "sources": {
+    "rss_urls": [
+      "https://www.aitimes.com/rss/allArticle.xml"
+    ],
+    "crawl_targets": [
+      {
+        "name": "geeknews",
+        "url": "https://news.hada.io/",
+        "category": "IT"
+      }
+    ]
+  },
+  "policy": {
+    "deduplication": "skip",
+    "request_timeout_sec": 10,
+    "crawl_delay_sec": 0.5
+  },
+  "paths": {
+    "db_path": "data/news_database.db",
+    "output_dir": "output"
+  }
+}
